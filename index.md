@@ -9,24 +9,11 @@
 ### Tensors
 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Both TensorFlow and PyTorch represent tensors as n-dimensional arrays of base datatypes
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+> TensorFlow
+```python
+tf.constant([[1, 2],[3, 4],[5, 6]], dtype=tf.float16)
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
