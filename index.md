@@ -1,8 +1,13 @@
-## Introductory Course to PyTorch and TensorFlow
+# Introductory Course to PyTorch and TensorFlow
 
-Many data scientists and machine learning engineers frequently alternate between two main toolboxes: PyTorch and TensorFlow.  Both in Python, These  frameworks share many similarities, but also diverge in meaningful ways. These differences can make switching between the two frameworks cumbersome and inefficient. In this introductory course we try to learn Pytorch and Tensorflow in one go, In this way we not only hit two bird with one stone but also also understand the differences upfront, so we don't confuse only later on.
 
-### Markdown
+<p align="justify">
+  Many data scientists and machine learning engineers frequently alternate between two main toolboxes: PyTorch and TensorFlow.  Both in Python, These  frameworks share many similarities, but also diverge in meaningful ways. These differences can make switching between the two frameworks cumbersome and inefficient. In this introductory course we try to learn Pytorch and Tensorflow in one go, In this way we not only hit two bird with one stone but also also understand the differences upfront, so we don't confuse only later on.
+</p>
+
+## Fundamentals
+### Tensors
+
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
