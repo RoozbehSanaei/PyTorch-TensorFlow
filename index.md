@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Introductory Course to PyTorch and TensorFlow
 
 You can use the [editor on GitHub](https://github.com/RoozbehSanaei/PyTorch-TensorFlow/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
