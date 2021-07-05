@@ -19,7 +19,6 @@ tf.constant([[1, 2],[3, 4],[5, 6]], dtype=tf.float16)
 ```
 
 
-
 *PyTorch*  
 In PyTorch you can create tensors on the desired device using the device attribute  
 ```python
