@@ -15,14 +15,14 @@ Both TensorFlow and PyTorch represent tensors as n-dimensional arrays of base da
 *TensorFlow*
 
 ```python
-tensor_tf = tf.constant([[1, 2],[3, 4],[5, 6]], dtype=tf.float16)
+tf_tensor = tf.constant([[1, 2],[3, 4],[5, 6]], dtype=tf.float16)
 ```
 
 
 *PyTorch*  
 In PyTorch you can create tensors on the desired device using the device attribute  
 ```python
-tensor_torch = torch.HalfTensor([[1, 2],[3, 4],[5, 6]],device=torch.device('cpu'))
+torch_tensor = torch.HalfTensor([[1, 2],[3, 4],[5, 6]],device=torch.device('cpu'))
 ```
 Tensors of different datatypes of  can be created in [PyTorch](https://pytorch.org/docs/stable/tensors.html) and [TensorFlow](https://www.tensorflow.org/api_docs/python/tf/dtypes/DType)
 
