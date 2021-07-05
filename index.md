@@ -49,7 +49,7 @@ tensor_torch[1,1] = 2
 ```
 
 ### Variables and Parameters
-Variables in TensorFlow and Parameters in PyTorch are gradient enabled tensors that combine along with operations to create the dynamic computational graph. Variables and Parameters are both mutable . 
+Variables in TensorFlow and Parameters in PyTorch are gradient enabled tensors that combine along with operations to create the dynamic computational graph. Variables and Parameters are both mutable. Assign to indices is possible in both, but in PyTorch you can't do it when 
 
 *TensorFlow*
 ```python
