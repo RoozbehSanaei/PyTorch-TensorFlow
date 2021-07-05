@@ -19,13 +19,13 @@ tf.constant([[1, 2],[3, 4],[5, 6]], dtype=tf.float16)
 ```
 
 
-In PyTorch you can create tensors on the desired device using the device attribute
 
-*PyTorch*
+*PyTorch*  
+In PyTorch you can create tensors on the desired device using the device attribute  
 ```python
-torch.ones([2, 4], dtype=torch.float64, device=torch.device('cpu'))
+torch.HalfTensor([[1, 2],[3, 4],[5, 6]],device=torch.device('cpu'))
 ```
-
+Tensors of different datatypes of  can be created in [PyTorch](https://pytorch.org/docs/stable/tensors.html) and [TensorFlow](https://www.tensorflow.org/api_docs/python/tf/dtypes/DType)
 #### Random Tensors
 
 
