@@ -32,7 +32,7 @@ Tensors of different datatypes of  can be created in [PyTorch](https://pytorch.o
 *TensorFlow*
 
 ```python
-tensor_tf = tf.random.uniform([4,4], minval=0, maxval=1, dtype=tf.float32, seed=1)
+tf_tensor = tf.random.uniform([4,4], minval=0, maxval=1, dtype=tf.float32, seed=1)
 ```
 
 
@@ -40,12 +40,12 @@ In PyTorch you can create tensors on the desired device using the device attribu
 
 *PyTorch*
 ```python
-tensor_torch = torch.rand(4,4,device=torch.device('cpu'),dtype=torch.float32)
+torch_tensor = torch.rand(4,4,device=torch.device('cpu'),dtype=torch.float32)
 ```
 #### Assignment to an element by index
 In TensorFlow There is no straighforward way to assign to an element of a tensor by index, PyTorch allows it simply by 
 ```python
-tensor_torch[1,1] = 2
+torch_tensor[1,1] = 2
 ```
 
 ### Variables and Parameters
@@ -53,13 +53,13 @@ Variables in TensorFlow and Parameters in PyTorch are gradient enabled tensors t
 
 *TensorFlow*
 ```python
-variable_tf = tf.Variable(tensor_tf)
-variable_tf[1,1].assign(2)
+tf_variable = tf.Variable(tf_tensor)
+tf_variable[1,1].assign(2)
 ```
 
 *PyTorch*
 ```python
-parameter_torch = torch.nn.Parameter(tensor_torch)
+torch_parameter = torch.nn.Parameter(torch_tensor)
 with torch.no_grad():
-  parameter_torch[1,1]=1
+  torch_parameter[1,1]=1
   ```
