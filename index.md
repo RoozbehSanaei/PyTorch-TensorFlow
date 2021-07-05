@@ -40,4 +40,5 @@ In PyTorch you can create tensors on the desired device using the device attribu
 
 *PyTorch*
 ```python
-torch.ones([2, 4], dtype=torch.float64, device=torch.device('cpu'))
+torch.rand(4,4,device=torch.device('cpu'),dtype=torch.float32)
+```
