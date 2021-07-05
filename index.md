@@ -59,5 +59,7 @@ variable_tf[1,1].assign(2)
 
 *PyTorch*
 ```python
-variable_torch = torch.rand(4,4,device=torch.device('cpu'),dtype=torch.float32)
-```
+parameter_torch = torch.nn.Parameter(tensor_torch)
+with torch.no_grad():
+  parameter_torch[1,1]=1
+  ```
