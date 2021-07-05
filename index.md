@@ -7,7 +7,7 @@
 
 ## Fundamentals
 ### Tensors
-Both TensorFlow and PyTorch represent tensors as n-dimensional arrays of base datatypes
+Both TensorFlow and PyTorch represent tensors as n-dimensional arrays of base datatypes, in both tensors as immutable objects.
 
 #### Constant Tensors
 
@@ -49,12 +49,14 @@ tensor_torch[1,1] = 2
 ```
 
 ### Variables and Parameters
-Variables in TensorFlow and Parameters in PyTorch are gradient enabled tensors that combine along with operations to create the dynamic computational graph.
+Variables in TensorFlow and Parameters in PyTorch are gradient enabled tensors that combine along with operations to create the dynamic computational graph. Variables and Parameters are both mutable . 
 
 *TensorFlow*
 ```python
 variable_tf = tf.Variable(tensor_tf)
+variable_tf[1,1].assign(2)
 ```
+
 *PyTorch*
 ```python
 variable_torch = torch.rand(4,4,device=torch.device('cpu'),dtype=torch.float32)
