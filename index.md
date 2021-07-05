@@ -7,10 +7,10 @@
 
 ## Fundamentals
 ### Tensors
-
-
-
 Both TensorFlow and PyTorch represent tensors as n-dimensional arrays of base datatypes
+
+#### Constant Tensors
+
 
 *TensorFlow*
 
@@ -25,3 +25,19 @@ In PyTorch you can create tensors on the desired device using the device attribu
 ```python
 torch.ones([2, 4], dtype=torch.float64, device=torch.device('cpu'))
 ```
+
+#### Random Tensors
+
+
+*TensorFlow*
+
+```python
+tf.random.uniform([4,4], minval=0, maxval=1, dtype=tf.float32, seed=1)
+```
+
+
+In PyTorch you can create tensors on the desired device using the device attribute
+
+*PyTorch*
+```python
+torch.ones([2, 4], dtype=torch.float64, device=torch.device('cpu'))
