@@ -48,3 +48,5 @@ In TensorFlow There is no straighforward way to assign to an element of a tensor
 a[1,1] = 2
 ```
 
+### Variables and Parameters
+Variables in TensorFlow and Parameters in PyTorch are gradient enabled tensors that combine along with operations to create the dynamic computational graph.
