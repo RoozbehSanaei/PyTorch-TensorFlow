@@ -16,6 +16,12 @@ Both TensorFlow and PyTorch represent tensors as n-dimensional arrays of base da
 tf.constant([[1, 2],[3, 4],[5, 6]], dtype=tf.float16)
 ```
 
+In PyTorch you can create tensors on the desired device using the device attribute
+> PyTorch
+```python
+torch.ones([2, 4], dtype=torch.float64, device=torch.device('cpu'))
+```
+
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 ### Jekyll Themes
