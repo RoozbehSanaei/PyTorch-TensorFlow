@@ -15,23 +15,24 @@ Both TensorFlow and PyTorch represent tensors as n-dimensional arrays of base da
 *TensorFlow*
 
 ```python
-tf.constant([[1, 2],[3, 4],[5, 6]], dtype=tf.float16)
+a = tf.constant([[1, 2],[3, 4],[5, 6]], dtype=tf.float16)
 ```
 
 
 *PyTorch*  
 In PyTorch you can create tensors on the desired device using the device attribute  
 ```python
-torch.HalfTensor([[1, 2],[3, 4],[5, 6]],device=torch.device('cpu'))
+a = torch.HalfTensor([[1, 2],[3, 4],[5, 6]],device=torch.device('cpu'))
 ```
 Tensors of different datatypes of  can be created in [PyTorch](https://pytorch.org/docs/stable/tensors.html) and [TensorFlow](https://www.tensorflow.org/api_docs/python/tf/dtypes/DType)
+
 #### Random Tensors
 
 
 *TensorFlow*
 
 ```python
-tf.random.uniform([4,4], minval=0, maxval=1, dtype=tf.float32, seed=1)
+a = tf.random.uniform([4,4], minval=0, maxval=1, dtype=tf.float32, seed=1)
 ```
 
 
@@ -39,5 +40,11 @@ In PyTorch you can create tensors on the desired device using the device attribu
 
 *PyTorch*
 ```python
-torch.rand(4,4,device=torch.device('cpu'),dtype=torch.float32)
+a = torch.rand(4,4,device=torch.device('cpu'),dtype=torch.float32)
 ```
+#### Assignment to an element by index
+In TensorFlow There is no straighforward way to assign to an element of a tensor by index, PyTorch allows it simply by 
+```python
+a[1,1] = 2
+```
+
