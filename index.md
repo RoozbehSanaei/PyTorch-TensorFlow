@@ -63,3 +63,32 @@ torch_parameter = torch.nn.Parameter(torch_tensor)
 with torch.no_grad():
   torch_parameter[1,1]=1
   ```
+
+### Model Class
+
+Whenever you want a model more complex than a simple sequence of existing Modules you will need to define your model by subclasssing keras Model or torch Module classes
+
+*TensorFlow*
+```python
+class LinearRegressionKeras(tf.keras.Model):
+  def __init__(self):
+    super().__init__()
+    self.w = tf.Variable(tf.random.uniform(shape=[1], -0.1, 0.1))
+    self.b = tf.Variable(tf.random.uniform(shape=[1], -0.1, 0.1))
+    
+  def __call__(self,x): 
+    return x * self.w + self.b
+```
+
+*PyTorch*
+```python
+class LinearRegressionPyTorch(torch.nn.Module): 
+  def __init__(self): 
+    super().__init__() 
+    self.w = torch.nn.Parameter(torch.Tensor(1, 1).uniform_(-0.1, 0.1))
+    self.b = torch.nn.Parameter(torch.Tensor(1).uniform_(-0.1, 0.1))
+  
+  def forward(self, x):  
+    return x @ self.w + self.b
+  ```
+
