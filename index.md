@@ -57,7 +57,7 @@ with torch.no_grad():
   torch_parameter[1,1]=1
   ```
 
-### Model Class
+### Defining a new model
 
 
 *TensorFlow*
