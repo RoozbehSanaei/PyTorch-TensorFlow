@@ -37,7 +37,7 @@ tf_tensor = tf.random.uniform([4,4], minval=0, maxval=1, dtype=tf.float32, seed=
 torch_tensor = torch.rand(4,4,device=torch.device('cpu'),dtype=torch.float32)
 ```
 #### Assignment to an element by index
-In TensorFlow There is no straighforward way to assign to an element of a tensor by index while PyTorch allows it
+In TensorFlow There is no straighforward way to assign to an element of a tensor by index 
 ```python
 torch_tensor[1,1] = 2
 ```
