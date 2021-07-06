@@ -66,7 +66,7 @@ with torch.no_grad():
 
 ### Model Class
 
-Whenever you want a model more complex than a simple sequence of existing Modules you will need to define your model by subclasssing TensorFlow Keras model or Torch Module classes
+Whenever you want a model more complex than a simple sequence of existing Modules you will need to define your model by subclasssing TensorFlow Keras model or Torch Module classes, In `__init__` function  you can define all the layers the network is going to have and In the `forward` function, you define how your model is going to be run, from input to output
 
 *TensorFlow*
 ```python
