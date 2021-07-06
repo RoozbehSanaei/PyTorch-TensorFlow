@@ -66,7 +66,7 @@ with torch.no_grad():
 
 ### Model Class
 
-Whenever you want a model more complex than a simple sequence of existing Modules you will need to define your model by subclasssing keras Model or torch Module classes
+Whenever you want a model more complex than a simple sequence of existing Modules you will need to define your model by subclasssing TensorFlow Keras model or Torch Module classes
 
 *TensorFlow*
 ```python
